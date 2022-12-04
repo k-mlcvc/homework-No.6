@@ -7,7 +7,16 @@
 var myString = "Neki string";
 var subStr = (myString.substring(5,10));
 
-if (subStr.length < 5 && subStr.length != 0) {
+if (subStr.length === 0) {
+    console.log("Prazan string!");
+} else if (subStr.length < 5) {
+    console.log ("Kraće od 5!");
+} else if (subStr.length === 5) {
+    console.log(subStr);
+}
+
+
+if (subStr.length < 5 && subStr.length !== 0) {
     console.log ("Kraće od 5!");
 } else if (subStr.length === 0) {
     console.log("Prazan string!");
